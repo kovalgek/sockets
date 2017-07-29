@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include <stdint>
+#include <stdbool.h>
 #include "inttypes.h"
 
 struct VoteInfo {
