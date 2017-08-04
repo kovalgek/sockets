@@ -62,7 +62,6 @@ int main(int argc, char *argv[]) {
 	if (Decode(inbuf, respSize, &vi)) { // Parse it
 		printf("Received:\n");
 		if (vi.isResponse)
-
 			printf(" Response to ");
 		if (vi.isInquiry)
 			printf("inquiry ");
