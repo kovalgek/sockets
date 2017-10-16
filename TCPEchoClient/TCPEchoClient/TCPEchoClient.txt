@@ -1,0 +1,52 @@
+                                               
+               ┌──────────────┐                
+               │Get data      │                
+               │- IP address  │                
+               │- echo string │                
+               │- port number │                
+               └──────────────┘                
+                       │                       
+                       ▼                       
+   ┌───────────────────────────────────────┐   
+   │Create socket                          │   
+   │- AF_INET      - IPv4                  │   
+   │- SOCK_STREAM  - stream based protocol │   
+   │- IPPORTO_TCP  - TCP                   │   
+   └───────────────────────────────────────┘   
+                       │                       
+                       ▼                       
+          ┌─────────────────────────┐          
+          │Construct server address │          
+          │structure sockaddr_in    │          
+          │- AF_INET                │          
+          │- IP address             │          
+          │- port number            │          
+          └─────────────────────────┘          
+                       │                       
+                       ▼                       
+        ┌────────────────────────────┐         
+        │ Connect socket to another  │         
+        │       remote socket        │         
+        └────────────────────────────┘         
+                       │                       
+                       ▼                       
+              ┌─────────────────┐              
+              │ Send string to  │              
+              │   the server    │              
+              └─────────────────┘              
+                       │                       
+                       ▼                       
+              ┌─────────────────┐              
+              │ while received  │              
+              │ data size less  │◀────────────┐
+              └─────────────────┘             │
+                       │                      │
+                       ▼                      │
+  ┌────────────────────────────────────────┐  │
+  │ recv(sock, buffer, BUFFERSIZE - 1, 0); │──┘
+  └────────────────────────────────────────┘   
+                       │                       
+                       ▼                       
+              ┌────────────────┐               
+              │  Close socket  │               
+              └────────────────┘               
