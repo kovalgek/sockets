@@ -17,24 +17,36 @@ static const char DELIMITER = '\n';
  * If stream ends before first byte, -1 is returned.
  * Precondition: buf has room for at least bufSize bytes.
  */
-int GetNextMsg(FILE *in, uint8_t *buf, size_t bufSize) {
+int GetNextMsg(FILE *in, uint8_t *buf, size_t bufSize)
+{
 	int count = 0;
 	int nextChar;
-	while ((unsigned long)count < bufSize) {
+	while ((unsigned long)count < bufSize)
+    {
 		nextChar = getc(in);
-		if (nextChar == EOF) {
+		if (nextChar == EOF)
+        {
 			if (count > 0)
+            {
 				DieWithUserMessage("GetNextMsg()", "Stream ended prematurely");
+            }
 			else
+            {
 				return -1;
+            }
 		}
 		if (nextChar == DELIMITER)
+        {
 			break;
+        }
 		buf[count++] = nextChar;
 	}
-	if (nextChar != DELIMITER) { // Out of space: count==bufSize
+	if (nextChar != DELIMITER) // Out of space: count==bufSize
+    {
 		return -count;
-	} else { // Found delimiter
+	}
+    else // Found delimiter
+    {
 		return count;
 	}
 }
@@ -42,14 +54,21 @@ int GetNextMsg(FILE *in, uint8_t *buf, size_t bufSize) {
 /* Write the given message to the output stream, followed by
  * the delimiter. Return number of bytes written, or -1 on failure.
  */
-int PutMsg(uint8_t buf[], size_t msgSize, FILE *out) {
+int PutMsg(uint8_t buf[], size_t msgSize, FILE *out)
+{
 	// Check for delimiter in message
 	unsigned long i;
 	for (i = 0; i < msgSize; i++)
+    {
 		if (buf[i] == DELIMITER)
+        {
 			return -1;
+        }
+    }
 	if (fwrite(buf, 1, msgSize, out) != msgSize)
+    {
 		return -1;
+    }
 	fputc(DELIMITER, out);
 	fflush(out);
 	return msgSize;

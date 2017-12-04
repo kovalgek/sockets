@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72C9A25C1FC20584000AC9C4 /* DieWithMessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 72C9A25B1FC20584000AC9C4 /* DieWithMessage.c */; };
 		72E397CB1EA36E310034F050 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 72E397CA1EA36E310034F050 /* main.c */; };
-		72E397E51EA372B20034F050 /* DieWithMessage.c in Sources */ = {isa = PBXBuildFile; fileRef = 72E397E41EA372B20034F050 /* DieWithMessage.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,9 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		72C9A25A1FC20583000AC9C4 /* DieWithMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DieWithMessage.h; path = ../../common/DieWithMessage.h; sourceTree = "<group>"; };
+		72C9A25B1FC20584000AC9C4 /* DieWithMessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = DieWithMessage.c; path = ../../common/DieWithMessage.c; sourceTree = "<group>"; };
 		72E397C71EA36E310034F050 /* TCPEchoClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TCPEchoClient; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E397CA1EA36E310034F050 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		72E397E41EA372B20034F050 /* DieWithMessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DieWithMessage.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		72C9A2591FC20575000AC9C4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				72C9A25B1FC20584000AC9C4 /* DieWithMessage.c */,
+				72C9A25A1FC20583000AC9C4 /* DieWithMessage.h */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		72E397BE1EA36E310034F050 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +69,8 @@
 		72E397C91EA36E310034F050 /* TCPEchoClient */ = {
 			isa = PBXGroup;
 			children = (
+				72C9A2591FC20575000AC9C4 /* Common */,
 				72E397CA1EA36E310034F050 /* main.c */,
-				72E397E41EA372B20034F050 /* DieWithMessage.c */,
 			);
 			path = TCPEchoClient;
 			sourceTree = "<group>";
@@ -122,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72E397E51EA372B20034F050 /* DieWithMessage.c in Sources */,
+				72C9A25C1FC20584000AC9C4 /* DieWithMessage.c in Sources */,
 				72E397CB1EA36E310034F050 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +262,7 @@
 				72E397D01EA36E310034F050 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

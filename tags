@@ -1,0 +1,86 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AcceptTCPConnection	common/TCPServerUtility.c	/^int AcceptTCPConnection(int servSock) {$/;"	f
+BASE	common/VoteEncodingText.c	/^	BASE = 10$/;"	e	enum:__anon2	file:
+BUFSIZE	BigEndian/main.c	/^static const int BUFSIZE = 1024;$/;"	v	file:
+BUFSIZE	GenericTCPClient/GenericTCPClient/main.c	/^#define BUFSIZE /;"	d	file:
+BUFSIZE	TCPEchoClient/TCPEchoClient/main.c	/^#define BUFSIZE /;"	d	file:
+BUFSIZE	common/LengthFramer.c	/^static const int BUFSIZE = 1024;$/;"	v	file:
+BUFSIZE	common/TCPServerUtility.c	/^static const int BUFSIZE = 1024;$/;"	v	file:
+BytesToDecString	BigEndian/main.c	/^char *BytesToDecString(uint8_t *byteArray, int arrayLength) {$/;"	f
+COUNT_SHIFT	common/VoteEncodingBin.c	/^	COUNT_SHIFT = 32,$/;"	e	enum:__anon1	file:
+DELIMITER	common/Framer.c	/^static const char DELIMITER = '\\n';$/;"	v	file:
+DELIMSTR	common/VoteEncodingText.c	/^static const char *DELIMSTR = " ";$/;"	v	file:
+Decode	common/VoteEncodingBin.c	/^bool Decode(uint8_t *inBuf, size_t mSize, VoteInfo *v) {$/;"	f
+Decode	common/VoteEncodingText.c	/^bool Decode(uint8_t *inBuf, const size_t mSize, VoteInfo *v) {$/;"	f
+DecodeIntBigEndian	BigEndian/main.c	/^uint64_t DecodeIntBigEndian(uint8_t val[], int offset, int size) {$/;"	f
+DieWithSystemMessage	GetAddrInfo/GetAddrInfo/DieWithMessage.c	/^void DieWithSystemMessage(const char *msg) {$/;"	f
+DieWithSystemMessage	TCPEchoServer/TCPEchoServer/DieWithMessage.c	/^void DieWithSystemMessage(const char *msg) {$/;"	f
+DieWithSystemMessage	common/DieWithMessage.c	/^void DieWithSystemMessage(const char *msg) {$/;"	f
+DieWithUserMessage	GetAddrInfo/GetAddrInfo/DieWithMessage.c	/^void DieWithUserMessage(const char *msg, const char *detail) {$/;"	f
+DieWithUserMessage	TCPEchoServer/TCPEchoServer/DieWithMessage.c	/^void DieWithUserMessage(const char *msg, const char *detail) {$/;"	f
+DieWithUserMessage	common/DieWithMessage.c	/^void DieWithUserMessage(const char *msg, const char *detail) {$/;"	f
+Encode	common/VoteEncodingBin.c	/^size_t Encode(VoteInfo *v, uint8_t *outBuf, size_t bufSize) {$/;"	f
+Encode	common/VoteEncodingText.c	/^size_t Encode(const VoteInfo *v, uint8_t *outBuf, const size_t bufSize) {$/;"	f
+EncodeIntBigEndian	BigEndian/main.c	/^int EncodeIntBigEndian(uint8_t dst[], uint64_t val, int offset, int size) {$/;"	f
+GetNextMsg	common/Framer.c	/^int GetNextMsg(FILE *in, uint8_t *buf, size_t bufSize) {$/;"	f
+GetNextMsg	common/LengthFramer.c	/^int GetNextMsg(FILE *in, uint8_t *buf, size_t bufSize) {$/;"	f
+HandleTCPClient	common/TCPServerUtility.c	/^void HandleTCPClient(int clntSocket) {$/;"	f
+INQSTR	common/VoteEncodingText.c	/^static const char *INQSTR = "i";$/;"	v	file:
+INQUIRE_FLAG	common/VoteEncodingBin.c	/^	INQUIRE_FLAG = 0x0100,$/;"	e	enum:__anon1	file:
+InterruptSignalHandler	Signal/SigAction.c	/^void InterruptSignalHandler(int signalType) {$/;"	f
+MAGIC	common/VoteEncodingBin.c	/^	MAGIC = 0x5400,$/;"	e	enum:__anon1	file:
+MAGIC	common/VoteEncodingText.c	/^static const char *MAGIC = "Voting";$/;"	v	file:
+MAGIC_MASK	common/VoteEncodingBin.c	/^	MAGIC_MASK = 0xfc00$/;"	e	enum:__anon1	file:
+MAXPENDING	TCPEchoServer/TCPEchoServer/main.c	/^static const int MAXPENDING = 5; \/\/ Maximum outstanding connection requests$/;"	v	file:
+MAXPENDING	common/TCPServerUtility.c	/^static const int MAXPENDING = 5; \/\/ Maximum outstanding connection requests$/;"	v	file:
+MAXSTRINGLENGTH	UDPEchoClient/UDPEchoClient/main.c	/^#define MAXSTRINGLENGTH /;"	d	file:
+MAXSTRINGLENGTH	UDPEchoServer/UDPEchoServer/main.c	/^#define MAXSTRINGLENGTH /;"	d	file:
+MAX_CANDIDATE	common/VoteProtocol.h	/^	MAX_CANDIDATE = 1000,$/;"	e	enum:__anon3
+MAX_WIRE_SIZE	common/VoteProtocol.h	/^	MAX_WIRE_SIZE = 500$/;"	e	enum:__anon3
+MESSAGELENGTH	BigEndian/main.c	/^const int MESSAGELENGTH = sizeof(uint8_t) + sizeof(uint16_t) + sizeof(uint32_t)	+ sizeof(uint64_t);$/;"	v
+PrintSocketAddress	GetAddrInfo/GetAddrInfo/AddressUtility.c	/^void PrintSocketAddress(const struct sockaddr *address, FILE *stream)$/;"	f
+PrintSocketAddress	common/AddressUtility.c	/^void PrintSocketAddress(const struct sockaddr *address, FILE *stream)$/;"	f
+PutMsg	common/Framer.c	/^int PutMsg(uint8_t buf[], size_t msgSize, FILE *out) {$/;"	f
+PutMsg	common/LengthFramer.c	/^int PutMsg(uint8_t buf[], size_t msgSize, FILE *out) {$/;"	f
+REQUEST_SIZE	common/VoteEncodingBin.c	/^	REQUEST_SIZE = 4,$/;"	e	enum:__anon1	file:
+RESPONSESTR	common/VoteEncodingText.c	/^static const char *RESPONSESTR = "R";$/;"	v	file:
+RESPONSE_FLAG	common/VoteEncodingBin.c	/^	RESPONSE_FLAG = 0x0200,$/;"	e	enum:__anon1	file:
+RESPONSE_SIZE	common/VoteEncodingBin.c	/^	RESPONSE_SIZE = 12,$/;"	e	enum:__anon1	file:
+SetupTCPClientSocket	common/TCPClientUtility.c	/^int SetupTCPClientSocket(const char *host, const char *service) {$/;"	f
+SetupTCPServerSocket	common/TCPServerUtility.c	/^int SetupTCPServerSocket(const char *service) {$/;"	f
+VOTESTR	common/VoteEncodingText.c	/^static const char *VOTESTR = "v";$/;"	v	file:
+VoteInfo	common/VoteProtocol.h	/^struct VoteInfo {$/;"	s
+VoteInfo	common/VoteProtocol.h	/^typedef struct VoteInfo VoteInfo;$/;"	t	typeref:struct:VoteInfo
+candidate	common/VoteProtocol.h	/^	int candidate; \/\/ invariant: 0 <= candidate <= MAX_CANDIDATE$/;"	m	struct:VoteInfo
+candidateID	common/VoteEncodingBin.c	/^	uint16_t candidateID;$/;"	m	struct:voteMsgBin	file:
+count	common/VoteProtocol.h	/^	uint64_t count; \/\/ invariant: !isResponse => count==0$/;"	m	struct:VoteInfo
+countHigh	common/VoteEncodingBin.c	/^	uint32_t countHigh;$/;"	m	struct:voteMsgBin	file:
+countLow	common/VoteEncodingBin.c	/^	uint32_t countLow;$/;"	m	struct:voteMsgBin	file:
+counts	VoteServerTCP/main.c	/^static uint64_t counts[MAX_CANDIDATE + 1];$/;"	v	file:
+header	common/VoteEncodingBin.c	/^	uint16_t header;$/;"	m	struct:voteMsgBin	file:
+isInquiry	common/VoteProtocol.h	/^	bool isInquiry;$/;"	m	struct:VoteInfo
+isResponse	common/VoteProtocol.h	/^	bool isResponse;$/;"	m	struct:VoteInfo
+main	BigEndian/main.c	/^int main(int argc, char *argv[])$/;"	f
+main	GenericTCPClient/GenericTCPClient/main.c	/^int main(int argc, const char * argv[]) {$/;"	f
+main	GenericTCPServer/main.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	GetAddrInfo/GetAddrInfo/main.c	/^int main(int argc, const char * argv[]) {$/;"	f
+main	Signal/SigAction.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	TCPEchoClient/TCPEchoClient/main.c	/^int main(int argc, const char * argv[]) {$/;"	f
+main	TCPEchoServer/TCPEchoServer/main.c	/^int main(int argc, const char * argv[]) {$/;"	f
+main	TestSizes/TestSizes/main.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	UDPEchoClient/UDPEchoClient/main.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	UDPEchoServer/UDPEchoServer/main.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	VoteClientTCP/main.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	VoteServerTCP/main.c	/^int main(int argc, char *argv[]) {$/;"	f
+stringBuf	BigEndian/main.c	/^static char stringBuf[BUFSIZE];$/;"	v	file:
+val16	BigEndian/main.c	/^const uint16_t val16 = 10001; \/\/ Ten thousand and one$/;"	v
+val32	BigEndian/main.c	/^const uint32_t val32 = 100000001; \/\/ One hundred million and one$/;"	v
+val64	BigEndian/main.c	/^const uint64_t val64 = 1000000000001L; \/\/ One trillion and one$/;"	v
+val8	BigEndian/main.c	/^const uint8_t val8 = 101; \/\/ One hundred and one$/;"	v
+voteMsgBin	common/VoteEncodingBin.c	/^struct voteMsgBin {$/;"	s	file:
+voteMsgBin	common/VoteEncodingBin.c	/^typedef struct voteMsgBin voteMsgBin;$/;"	t	typeref:struct:voteMsgBin	file:

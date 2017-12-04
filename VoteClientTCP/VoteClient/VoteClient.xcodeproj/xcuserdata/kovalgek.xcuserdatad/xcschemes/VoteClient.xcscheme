@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "72E397EE1EA389430034F050"
-               BuildableName = "TCPEchoServer"
-               BlueprintName = "TCPEchoServer"
-               ReferencedContainer = "container:TCPEchoServer.xcodeproj">
+               BlueprintIdentifier = "72C9A20B1FC1E828000AC9C4"
+               BuildableName = "VoteClient"
+               BlueprintName = "VoteClient"
+               ReferencedContainer = "container:VoteClient.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,10 +33,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72E397EE1EA389430034F050"
-            BuildableName = "TCPEchoServer"
-            BlueprintName = "TCPEchoServer"
-            ReferencedContainer = "container:TCPEchoServer.xcodeproj">
+            BlueprintIdentifier = "72C9A20B1FC1E828000AC9C4"
+            BuildableName = "VoteClient"
+            BlueprintName = "VoteClient"
+            ReferencedContainer = "container:VoteClient.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -57,15 +57,23 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72E397EE1EA389430034F050"
-            BuildableName = "TCPEchoServer"
-            BlueprintName = "TCPEchoServer"
-            ReferencedContainer = "container:TCPEchoServer.xcodeproj">
+            BlueprintIdentifier = "72C9A20B1FC1E828000AC9C4"
+            BuildableName = "VoteClient"
+            BlueprintName = "VoteClient"
+            ReferencedContainer = "container:VoteClient.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
+            argument = "127.0.0.1"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "5000"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "666"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
@@ -82,10 +90,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "72E397EE1EA389430034F050"
-            BuildableName = "TCPEchoServer"
-            BlueprintName = "TCPEchoServer"
-            ReferencedContainer = "container:TCPEchoServer.xcodeproj">
+            BlueprintIdentifier = "72C9A20B1FC1E828000AC9C4"
+            BuildableName = "VoteClient"
+            BlueprintName = "VoteClient"
+            ReferencedContainer = "container:VoteClient.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

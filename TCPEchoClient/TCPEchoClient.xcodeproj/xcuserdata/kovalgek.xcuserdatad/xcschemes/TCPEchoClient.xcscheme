@@ -26,6 +26,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -45,6 +46,7 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -67,7 +69,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "&quot;Hello&quot;"
+            argument = "&quot;Hello New blood joins this earth&#10;And quickly he&apos;s subdued&#10;Through constant pained disgrace&#10;The young boy learns their rules&#10;With time the child draws in&#10;This whipping boy done wrong&#10;Deprived of all his thoughts&#10;The young man struggles on and on he&apos;s known&#10;A vow unto his own&#10;That never from this day&#10;His will they&apos;ll take away-easy&#10;What I&apos;ve felt&#10;What I&apos;ve known&#10;Never shined through in what I&apos;ve shown&#10;Never be&#10;Never see&#10;Won&apos;t see what might have been&#10;What I&apos;ve felt&#10;What I&apos;ve known&#10;Never shined through in what I&apos;ve shown&#10;Never free&#10;Never me&#10;So I dub thee Un-forgiven Hello New blood joins this earth&#10;And quickly he&apos;s subdued&#10;Through constant pained disgrace&#10;The young boy learns their rules&#10;With time the child draws in&#10;This whipping boy done wrong&#10;Deprived of all his thoughts&#10;The young man struggles on and on he&apos;s known&#10;A vow unto his own&#10;That never from this day&#10;His will they&apos;ll take away-easy&#10;What I&apos;ve felt&#10;What I&apos;ve known&#10;Never shined through in what I&apos;ve shown&#10;Never be&#10;Never see&#10;Won&apos;t see what might have been&#10;What I&apos;ve felt&#10;What I&apos;ve known&#10;Never shined through in what I&apos;ve shown&#10;Never free&#10;Never me&#10;So I dub thee Un-forgiven Hello New blood joins this earth&#10;And quickly he&apos;s subdued&#10;Through constant pained disgrace&#10;The young boy learns their rules&#10;With time the child draws in&#10;This whipping boy done wrong&#10;Deprived of all his thoughts&#10;The young man struggles on and on he&apos;s known&#10;A vow unto his own&#10;That never from this day&#10;His will they&apos;ll take away-easy&#10;What I&apos;ve felt&#10;What I&apos;ve known&#10;Never shined through in what I&apos;ve shown&#10;Never be&#10;Never see&#10;Won&apos;t see what might have been&#10;What I&apos;ve felt&#10;What I&apos;ve known&#10;Never shined through in what I&apos;ve shown&#10;Never free&#10;Never me&#10;So I dub thee Un-forgiven&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument

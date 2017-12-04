@@ -13,7 +13,8 @@
 #include "DieWithMessage.h"
 #include "AddressUtility.h"
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char * argv[]) 
+{
     
     if (argc != 3) // Test for correct number of arguments
         DieWithUserMessage("Parameter(s)", "<Address/Name> <Port/Service>");
@@ -36,7 +37,8 @@ int main(int argc, const char * argv[]) {
         DieWithUserMessage("getaddrinfo() failed", gai_strerror(rtnVal));
     
     // Display returned addresses
-    for (struct addrinfo *addr = addrList; addr != NULL; addr = addr->ai_next) {
+    for (struct addrinfo *addr = addrList; addr != NULL; addr = addr->ai_next) 
+	{
         PrintSocketAddress(addr->ai_addr, stdout);
         fputc('\n', stdout);
     }

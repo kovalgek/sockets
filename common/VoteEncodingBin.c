@@ -19,7 +19,6 @@
 #include <stdlib.h>
 #include <stdint.h>
 #include <netinet/in.h>
-//#include "VoteProtocol.h"
 #include "DieWithMessage.h"
 #include "VoteEncoding.h"
 
@@ -42,23 +41,33 @@ struct voteMsgBin {
 	uint32_t countLow;
 };
 
-size_t Encode(VoteInfo *v, uint8_t *outBuf, size_t bufSize) {
+size_t Encode(VoteInfo *v, uint8_t *outBuf, size_t bufSize)
+{
 	if ((v->isResponse && bufSize < sizeof(voteMsgBin)) || bufSize < 2 * sizeof(uint16_t))
+    {
 		DieWithUserMessage("Output buffer too small", "");
+    }
 	voteMsgBin *vm = (voteMsgBin *) outBuf;
 	memset(outBuf, 0, sizeof(voteMsgBin)); // Be sure
 	vm->header = MAGIC;
 	if (v->isInquiry)
+    {
 		vm->header |= INQUIRE_FLAG;
+    }
 	if (v->isResponse)
+    {
 		vm->header |= RESPONSE_FLAG;
+    }
 	vm->header = htons(vm->header); // Byte order
 	vm->candidateID = htons(v->candidate); // Know it will fit, by invariants
-	if (v->isResponse) {
+	if (v->isResponse)
+    {
 		vm->countHigh = htonl(v->count >> COUNT_SHIFT);
 		vm->countLow = htonl((uint32_t) v->count);
 		return RESPONSE_SIZE;
-	} else {
+	}
+    else
+    {
 		return REQUEST_SIZE;
 	}
 }
@@ -66,8 +75,8 @@ size_t Encode(VoteInfo *v, uint8_t *outBuf, size_t bufSize) {
 /* Extract message info from given buffer.
  * Leave input unchanged.
  */
-bool Decode(uint8_t *inBuf, size_t mSize, VoteInfo *v) {
-
+bool Decode(uint8_t *inBuf, size_t mSize, VoteInfo *v)
+{
 	voteMsgBin *vm = (voteMsgBin *) inBuf;
 
 	// Attend to byte order; leave input unchanged
