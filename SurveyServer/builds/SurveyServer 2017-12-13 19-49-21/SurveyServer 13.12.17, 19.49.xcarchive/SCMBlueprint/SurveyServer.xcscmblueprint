@@ -1,0 +1,26 @@
+{
+  "DVTSourceControlWorkspaceBlueprintLocationsKey" : {
+    "3620221A5145F62419460B5C0F1DBCAD5EA7399B" : {
+      "DVTSourceControlBranchIdentifierKey" : "develop",
+      "DVTSourceControlLocationRevisionKey" : "b25fbd9ac4b04bcd27aeffcdc039199bf16db860",
+      "DVTSourceControlBranchOptionsKey" : 4,
+      "DVTSourceControlBranchRemoteNameKey" : "origin",
+      "DVTSourceControlWorkspaceBlueprintLocationTypeKey" : "DVTSourceControlBranch"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3620221A5145F62419460B5C0F1DBCAD5EA7399B",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9D6A4FF7-569D-4B41-A69C-A0274C8D5C71",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3620221A5145F62419460B5C0F1DBCAD5EA7399B" : "sockets\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SurveyServer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SurveyServer\/SurveyServer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kovalgek\/sockets",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3620221A5145F62419460B5C0F1DBCAD5EA7399B"
+    }
+  ]
+}
