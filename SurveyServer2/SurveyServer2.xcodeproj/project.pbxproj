@@ -1,0 +1,300 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72C3715A1FEAFB3300E10CBA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72C371591FEAFB3300E10CBA /* main.cpp */; };
+		72C371631FEAFB5800E10CBA /* PracticalSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72C371611FEAFB5800E10CBA /* PracticalSocket.cpp */; };
+		72C3716B1FEAFBC600E10CBA /* SurveyCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 72C371691FEAFBC600E10CBA /* SurveyCommon.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72C371541FEAFB3300E10CBA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		72C371561FEAFB3300E10CBA /* SurveyServer2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SurveyServer2; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C371591FEAFB3300E10CBA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		72C371611FEAFB5800E10CBA /* PracticalSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PracticalSocket.cpp; path = ../../PracticalSocket/PracticalSocket.cpp; sourceTree = "<group>"; };
+		72C371621FEAFB5800E10CBA /* PracticalSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PracticalSocket.h; path = ../../PracticalSocket/PracticalSocket.h; sourceTree = "<group>"; };
+		72C371691FEAFBC600E10CBA /* SurveyCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SurveyCommon.cpp; path = ../../common/SurveyCommon.cpp; sourceTree = "<group>"; };
+		72C3716A1FEAFBC600E10CBA /* SurveyCommon.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SurveyCommon.hpp; path = ../../common/SurveyCommon.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72C371531FEAFB3300E10CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72C3714D1FEAFB3300E10CBA = {
+			isa = PBXGroup;
+			children = (
+				72C371581FEAFB3300E10CBA /* SurveyServer2 */,
+				72C371571FEAFB3300E10CBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72C371571FEAFB3300E10CBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72C371561FEAFB3300E10CBA /* SurveyServer2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72C371581FEAFB3300E10CBA /* SurveyServer2 */ = {
+			isa = PBXGroup;
+			children = (
+				72C371681FEAFBB900E10CBA /* SurveyCommon */,
+				72C371601FEAFB4800E10CBA /* PracticalSocket */,
+				72C371591FEAFB3300E10CBA /* main.cpp */,
+			);
+			path = SurveyServer2;
+			sourceTree = "<group>";
+		};
+		72C371601FEAFB4800E10CBA /* PracticalSocket */ = {
+			isa = PBXGroup;
+			children = (
+				72C371611FEAFB5800E10CBA /* PracticalSocket.cpp */,
+				72C371621FEAFB5800E10CBA /* PracticalSocket.h */,
+			);
+			name = PracticalSocket;
+			sourceTree = "<group>";
+		};
+		72C371681FEAFBB900E10CBA /* SurveyCommon */ = {
+			isa = PBXGroup;
+			children = (
+				72C371691FEAFBC600E10CBA /* SurveyCommon.cpp */,
+				72C3716A1FEAFBC600E10CBA /* SurveyCommon.hpp */,
+			);
+			name = SurveyCommon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72C371551FEAFB3300E10CBA /* SurveyServer2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72C3715D1FEAFB3300E10CBA /* Build configuration list for PBXNativeTarget "SurveyServer2" */;
+			buildPhases = (
+				72C371521FEAFB3300E10CBA /* Sources */,
+				72C371531FEAFB3300E10CBA /* Frameworks */,
+				72C371541FEAFB3300E10CBA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SurveyServer2;
+			productName = SurveyServer2;
+			productReference = 72C371561FEAFB3300E10CBA /* SurveyServer2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72C3714E1FEAFB3300E10CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Anton Kovalchuk";
+				TargetAttributes = {
+					72C371551FEAFB3300E10CBA = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 72C371511FEAFB3300E10CBA /* Build configuration list for PBXProject "SurveyServer2" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 72C3714D1FEAFB3300E10CBA;
+			productRefGroup = 72C371571FEAFB3300E10CBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72C371551FEAFB3300E10CBA /* SurveyServer2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72C371521FEAFB3300E10CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72C3716B1FEAFBC600E10CBA /* SurveyCommon.cpp in Sources */,
+				72C371631FEAFB5800E10CBA /* PracticalSocket.cpp in Sources */,
+				72C3715A1FEAFB3300E10CBA /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		72C3715B1FEAFB3300E10CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		72C3715C1FEAFB3300E10CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		72C3715E1FEAFB3300E10CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		72C3715F1FEAFB3300E10CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72C371511FEAFB3300E10CBA /* Build configuration list for PBXProject "SurveyServer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72C3715B1FEAFB3300E10CBA /* Debug */,
+				72C3715C1FEAFB3300E10CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72C3715D1FEAFB3300E10CBA /* Build configuration list for PBXNativeTarget "SurveyServer2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72C3715E1FEAFB3300E10CBA /* Debug */,
+				72C3715F1FEAFB3300E10CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72C3714E1FEAFB3300E10CBA /* Project object */;
+}
